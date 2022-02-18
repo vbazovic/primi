@@ -104,6 +104,7 @@ ExtensionHub::add([
 	\Smuuf\Primi\Psl\BoolExtension::class,
 	\Smuuf\Primi\Psl\CastingExtension::class,
 	\Smuuf\Primi\Psl\HashExtension::class,
-	\Smuuf\Primi\Psl\CurlExtension::class
+	\Smuuf\Primi\Psl\CurlExtension::class,
+	\Smuuf\Primi\Psl\SibillScriptingExtension::class
 ]);
 
