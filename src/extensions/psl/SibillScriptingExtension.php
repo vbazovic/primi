@@ -34,7 +34,7 @@ class SibillScriptingExtension extends Extension {
      * @param int $ms
      */
     public static function sleep(int $ms=100){
-        usleep($ms*10);
+        usleep($ms*1000);
     }
     
     /**
