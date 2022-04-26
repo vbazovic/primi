@@ -45,7 +45,7 @@ class SibillScriptingExtension extends Extension {
      * @param mixed|null $default
      * @return mixed|null
      */
-    public static function get_json_data(string $json, string $key, ?mixed $default = NullValue::TYPE):?mixed{
+    public static function get_json_data(string $json, string $key, $default = NullValue::TYPE){
         $a = json_decode($json,true);
         return $a[$key] ?: $default;
     }
