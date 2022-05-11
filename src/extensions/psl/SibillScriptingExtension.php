@@ -71,7 +71,7 @@ class SibillScriptingExtension extends Extension {
      * @return int
      */
     public static function extract_bit($value, $bit_pos) {        
-        return $this->extract_bits($value, $bit_pos, $bit_pos+1);
+        return self::extract_bits($value, $bit_pos, $bit_pos+1);
     }
 
 }
