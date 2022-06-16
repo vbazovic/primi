@@ -73,5 +73,17 @@ class SibillScriptingExtension extends Extension {
     public static function extract_bit($value, $bit_pos) {        
         return self::extract_bits($value, $bit_pos, $bit_pos+1);
     }
-
+    
+    /**
+     * Set n-th 
+     * 
+     * @param int $value
+     * @param int $bit_pos
+     * @param int $bit_val
+     * @return int
+     */
+    public static function set_bit($value, $bit_pos, $bit_val) {
+        $mask = 1 << $bit_pos;
+        return ($value & ~$mask) | (($bit_val << $bit_pos) & $mask);
+    }
 }
