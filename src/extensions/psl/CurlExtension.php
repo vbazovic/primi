@@ -16,7 +16,7 @@ use \Smuuf\Primi\Structures\StringValue;
 class CurlExtension extends Extension {
 
     /**
-     * Fetches content from $cUrl
+     * Fetches content from $cUrl 
      * 
      * @param string $cUrl
      * @param str $header   Optional header
@@ -41,6 +41,14 @@ class CurlExtension extends Extension {
         }
     }
 
+    /**
+     * Helper to fetch with curl and token
+     *  
+     * @param string $cUrl
+     * @param string $token
+     * @param string $key
+     * @return string|null
+     */
     public static function curl_get_jwt(string $cUrl, string $token, string $key = 'App-Key') {
         $header = [
             "Accept: application/json",
